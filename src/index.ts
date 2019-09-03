@@ -5,19 +5,19 @@ export interface IBrexitOptions {
   noDeal?: boolean;
 }
 
-interface IPropertiesDictionary {}
-
-function shouldCheck(
-  property: string,
-  propertiesDictionary: IPropertiesDictionary
-): EitherLike<boolean, boolean> {
-  return property in propertiesDictionary ? Left(false) : Right(true);
+function replaceFactory(
+  nextPropertyName: string
+): (decl: postcss.Declaration) => any {
+  return decl => {
+    decl.replaceWith(
+      postcss.decl({ prop: nextPropertyName, value: decl.value })
+    );
+  };
 }
 
-function walkDeclarations(decl: postcss.Declaration, index: number): any {}
-
 module.exports = postcss.plugin<IBrexitOptions>("🇬🇧brexit🇬🇧", options => {
-  return (root, result) => {
-    root.walkDecls("*", walkDeclarations);
+  return root => {
+    root.walkDecls("background-colour", replaceFactory("background-color"));
+    root.walkDecls("colour", replaceFactory("color"));
   };
 });
