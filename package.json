@@ -1,15 +1,22 @@
 {
-  "name": "typescript-node-lib",
+  "name": "postcss-brexit",
   "version": "0.0.0",
   "licence": "MIT",
   "author": {
-    "name": "name",
-    "email": "email@domain.com"
+    "name": "Paolo Roth",
+    "email": "iamoctod@gmail.com"
   },
   "main": "dist/index.js",
-  "description": "your typescript library description",
+  "description": "Put some correct British English into your CSS files",
   "keywords": [
-    "typescript"
+    "typescript",
+    "css",
+    "octod",
+    "postcss",
+    "postcss-plugin",
+    "brexit",
+    "english",
+    "funny"
   ],
   "scripts": {
     "changelog": "standard-changelog",
@@ -20,10 +27,10 @@
     "test": "jest",
     "upgrade-interactive": "npm-check --update"
   },
-  "homepage": "https://github.com/yourname/yourrepo#readme",
+  "homepage": "https://github.com/octod/postcss-brexit#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourname/yourrepo.git"
+    "url": "git+https://github.com/octod/postcss-brexit.git"
   },
   "husky": {
     "hooks": {
