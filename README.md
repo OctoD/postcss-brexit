@@ -39,6 +39,17 @@ postcss(
 ).process(fs.readFileSync('./my-british-english-stylesheet.css'))
 ```
 
+So you can write your CSS files finally with some correct English British
+
+```css
+.MyClass {
+  background-colour: blue;
+  border: 1px solid;
+  border-colour: white;
+  colour: white;
+}
+```
+
 # What's next
 
 Changing every single CSS property to correct British English (using genitive)
