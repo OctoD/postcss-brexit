@@ -1,13 +1,13 @@
 {
   "name": "postcss-brexit",
-  "version": "0.0.0",
+  "version": "31.10.2019",
   "licence": "MIT",
   "author": {
     "name": "Paolo Roth",
     "email": "iamoctod@gmail.com"
   },
   "main": "dist/index.js",
-  "description": "Put some correct British English into your CSS files",
+  "description": "Put some correct British English into your CSS files before brexiting",
   "keywords": [
     "typescript",
     "css",

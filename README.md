@@ -1,42 +1,55 @@
-typescript library template
-===========================
+🇬🇧 post(css) brexit 🇬🇧
+======================
 
-Your library description
+> DISCLAIMER: this is a joke and does not want to be offensive to anyone, it's my way to laught at my worries about a hard Brexit
+
+Put some correct British English into your CSS files before brexiting
 
 # 🎉 Features
 
-Add your library features here.
+📦 This postcss plugin helps you to:
 
-📦 This template already has (out of the box):
-
-* preconfigured jest (with ts-jest) for testing your library
-* azure dev-ops configuration
-* travis-ci configuration, just add your repo to travis and you have done
-* codecov setup
-* tsconfig.json configurated for node.js libraries
-* eslint/prettier you have eslint/prettier preconfigured, your code will be linted at commit time automatically
-* github issue templates, they are already there, just configure them
-* contributing guidelines and code of conduct are already setupped
-* size-limit script, for checking the weight of your library
-* automatic docs generation with [typedoc](https://github.com/TypeStrong/typedoc)
+* write your CSS files in correct British English
+* maybe makes you smile
 
 # ⚙ Install
 
 ```bash
 # npm
-npm i mylib
+npm i postcss-brexit
 
 # yarn
-yarn add mylib
+yarn add postcss-brexit
 ```
-
-# 📖 Docs
-
-You can read docs [here](./docs/README.md), just remember to run your `npm run docs` script.
 
 # 🔍 Usage
 
-Put my library usage guide here
+```ts
+import postcss from 'postcss';
+import brexit from 'postcss-brexit';
+
+postcss(
+  [
+    brexit(
+      {
+        noDeal: true
+      }
+    )
+  ]
+).process(fs.readFileSync('./my-british-english-stylesheet.css'))
+```
+
+# What's next
+
+Changing every single CSS property to correct British English (using genitive)
+
+E.g.
+
+```css
+.Sky {
+  background's colour: var(--sometimes-blue);
+}
+```
 
 # ️❤️ Contributing
 
